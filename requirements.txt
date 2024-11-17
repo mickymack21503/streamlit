@@ -3,4 +3,5 @@ gdown
 opencv-python-headless==4.7.0.72
 opencv-python
 numpy
-setuptools  # if you're facing issues related to setuptools or distutils
+setuptools  
+ultralytics
