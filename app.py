@@ -61,7 +61,7 @@ def process_video(input_path, output_path, preview=False):
 
         # If preview is enabled, show the frame
         if preview:
-            st.image(annotated_frame, channels="BGR", use_column_width=True)
+            st.image(annotated_frame, channels="BGR", use_container_width=True)  # Updated parameter
 
         progress_bar.progress((i + 1) / frame_count)
 
@@ -108,4 +108,4 @@ if uploaded_file:
     if os.path.exists(temp_output_path):
         os.remove(temp_output_path)
 else:
-    st.info("Please upload a video file to start processing.")  
+    st.info("Please upload a video file to start processing.")
